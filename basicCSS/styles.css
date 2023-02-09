@@ -1,0 +1,31 @@
+/* selector{
+    property:value;
+ } */
+ h1{
+    color:red;
+ }
+ h3
+ {
+    color:green;
+ }
+ h6{
+    color:blue;
+ }
+ p{
+    background-color: gray;
+    color:white;
+ }
+ /* create a class */
+ .style1
+ {
+    color:blueviolet;
+    font-weight: bold;
+    font-style: italic;
+ }
+ /* create an ID */
+ #style2
+ {
+    color:brown;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+ }
