@@ -1,0 +1,113 @@
+* { box-sizing: border-box; }
+/* header styling */
+header { background-color: #40407A;
+    background-image: url(sun.jpg);
+    background-size: 100% 100%;/* first value: width of the image, second value: height */
+    color: #FFFFFF;
+    margin-top: 50px;
+    font-size: 90%;
+    
+ } 
+header a { text-decoration: none; }
+header a:link { color: #FFFFFF; }
+header a:visited { color: #FFFFFF; }
+header a:hover  { color: #EFF5F5; }		   
+
+/* navbar styling */
+nav { text-align: right;
+ background-color: #FFFFFF;
+ margin: 0; 
+ padding-top: 0.5em;
+ padding-bottom: 1em;
+ padding-right: 0;
+ position: fixed;top:0;
+ z-index: 9999; 
+ width: 100%;
+ height: auto; 
+ margin: auto;
+ width:80%;
+}
+nav a { text-decoration: none; }
+nav ul { list-style-type: none; 
+    margin: 0; 
+    padding-right: 2em;
+    font-size: 1.2em; 
+  
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+  
+  }
+nav li { display: inline;
+    padding-left: 2em;
+    width: 7em;  }
+nav a:link { color: #3F2860; }
+nav a:visited { color: #497777; }
+nav a:hover { color: #A26100; }
+
+
+/* body styling */
+body 
+{ background-color: #40407A; 
+  color: #40407A;
+  font-family: Verdana, Arial, sans-serif;
+  margin: auto;
+width:80%;
+}
+
+/* footer styling */
+footer { 
+    font-style: italic;
+    text-align: center;
+    font-size: small;
+    
+   }
+
+   /* table styling */
+section { 
+     padding-left: 2em;
+     padding-right: 2em; }
+
+table { border: 1px solid #40407A; 
+   margin-bottom: 1em;
+   min-width: 400px;
+   border-collapse: collapse; }
+td, th { padding: 0.5em;
+    border: 1px solid #40407A; }
+
+caption { margin: 1em;
+     font-weight: bold;
+     font-size: 120%; }
+
+
+#wrapper { 
+  background-color: #F5F5F5;
+  padding: 2em; 
+  width: 100%;
+}
+
+.home { height: 20vh;
+   padding-top: 2em;
+   padding-left: 10%; }
+.content { height: 20vh;
+      padding-top: 2em;
+      padding-left: 10%; }
+#flow {display: flex;
+        flex-direction: row; }
+/* form styling */
+form { 
+  width: 60%;
+  max-width: 40em;
+  display: grid;
+  grid-gap: 1em; gap: 1em;
+  grid-template-columns: 9em 1fr;
+  grid-template-rows: auto; }
+input[type="submit"] { grid-column: 2 / 3;
+    width: 9em; 
+}
+input, datalist textarea { margin-bottom: .5em; }
+
+
+
+
+
