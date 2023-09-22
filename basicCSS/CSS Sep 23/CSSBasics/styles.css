@@ -1,0 +1,51 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1
+{
+    background-color: grey;
+    color:white;
+   
+}
+h2{
+    background-color: #1b0303;
+    color:white;
+}
+/* id used to target specific components 
+that has the same id */
+#test1{
+    font-size: 20px;
+}
+/* class used to target components 
+that has the same class name */
+.test2{
+    font-size: 40px;
+}
+/* style the divisions */
+.section1
+{
+    background-color: grey;
+    color:white;
+    padding: 20px;
+    margin: 20px;
+    border:10px solid black;
+}
+
+.section2
+{
+    background-color: #d5eda8;
+    padding-top:30px;
+    margin:50px;
+    border:10px solid blue;
+}
+
+.flexdemo
+{
+    background-color: #f0c1c1;
+}
+.flexdemo ul{
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
