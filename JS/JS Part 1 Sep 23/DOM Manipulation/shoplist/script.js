@@ -1,9 +1,13 @@
 let b1 = document.getElementById("b1");
+
 //retrieve value from text box
 b1.addEventListener("click", createListElement);
+
 function createListElement() {
+  let userinput = document.getElementById("ui");
+
   if (userinput.value.length > 0) {
-    let userinput = document.getElementById("userinput");
+  
     //retieve the ul
     let ul = document.querySelector("ul");
     //create li element
@@ -15,6 +19,7 @@ function createListElement() {
     userinput.value = "";
   }
 }
+
 //add a 'keypress' event such that items are added
 //to list when enter key is pressed
 userinput.addEventListener('keypress',enterKeyAdd);

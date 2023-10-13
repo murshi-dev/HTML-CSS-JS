@@ -2,7 +2,7 @@
     <body>
         <h1>Shopping List</h1>
         <!-- input text box -->
-        <input type="text" id="ui" placeholder="enter items here">
+        <input type="text" id="userinput" placeholder="enter items here">
         <button id="b1">Enter</button>
         <!-- create a list with some items -->
         <ul>
