@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- design form here -->
+      <form id="form">
+        <h2>Register</h2>
+        <!-- username set -->
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" />
+          <!-- a div to display error message -->
+          <small id="s1">error message</small>
+        </div>
+        <!-- email set -->
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" />
+          <!-- a div to display error message -->
+          <small id="s2">error message</small>
+        </div>
+        <!-- gender radio button -->
+        <div class="form-control">
+          <label for="gender">Gender</label>
+          <div class="other-control">
+            <input type="radio" id="gender" value="male" />Male
+            <input type="radio" id="gender" value="female" />Female
+          </div>
+          <!-- a div to display error message -->
+          <small id="s3">error message</small>
+        </div>
+        <!-- select option - form levels -->
+        <div class="form-control">
+          <label for="formlevel">Form</label>
+          <select id="formlevel">
+            <option value="">Choose an option</option>
+            <option value="1">Form 1</option>
+            <option value="2">Form 2</option>
+            <option value="3">Form 3</option>
+          </select>
+          <!-- a div to display error message -->
+          <small id="s4">error message</small>
+        </div>
+
+        <!-- subjects - checkbox -->
+        <div class="form-control">
+            <label for="subjects">Subjects</label>
+            <div class="other-control">
+                <input type="checkbox" id="subject1" value="subject1">Maths
+                <input type="checkbox" id="subject2" value="subject2">Add Maths
+                <input type="checkbox" id="subject3" value="subject3">Biology
+            </div>
+            <!-- a div to display error message -->
+          <small id="s5">error message</small>
+        </div>
+
+
+
+        <!-- button -->
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

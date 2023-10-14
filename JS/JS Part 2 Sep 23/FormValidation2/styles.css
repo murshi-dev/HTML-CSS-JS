@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.container
+{
+    border:2px solid black;
+    padding:20px;
+    border-radius: 5px;
+    width:500px;
+}
+.form-control
+{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+.form-control input,select,button{
+    display:block;
+    width:100%;
+}
+.other-control
+{
+    display: flex;
+    justify-content: space-around;
+}
+#s1,#s2,#s3,#s4,#s5
+{
+    visibility: hidden;
+    color:brown;
+}
+input[type="checkbox"]
+{
+    width:20px;
+    height:20px;
+}

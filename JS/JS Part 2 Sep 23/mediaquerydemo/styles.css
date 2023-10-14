@@ -1,0 +1,21 @@
+/* mobile - 480 px 
+    tablets - 767 px
+        desktop - 1280px*/
+
+@media (max-width: 480px) {
+  body {
+    background-color: blueviolet; /*change color when screen size is 480px)*/
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  body {
+    background-color: green; /*change color when screen size is between 480 to 767px)*/
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: yellow; /*change color when screen size is above 767px)*/
+  }
+}
