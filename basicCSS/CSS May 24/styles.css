@@ -1,0 +1,32 @@
+h1{
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: brown;
+}
+h2
+{
+font-size: medium;
+color: blue;
+}
+/* p
+{
+    color: red;
+} */
+
+/* group a set of format using ID */
+#format1
+{
+    color: blue;
+    font-size: larger;
+}
+#format2
+{
+    color: red;
+    font-size: smaller;
+}
+
+/* group a set of format using CLASS */
+.format3
+{
+    background-color: gray;
+    color:white;
+}
