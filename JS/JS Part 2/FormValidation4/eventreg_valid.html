@@ -1,0 +1,105 @@
+/*Field	Form Control	Validation Rule
+Student Name 	Text Box	Value is required
+Student Email 	Email	Value is required
+Password	Password box	Value is required
+Must be not be less than eight alphanumeric characters
+Confirm Password	Password box	Value is required
+Must match with Password value
+Contact Number	Number	Value is required
+Must be 10 digits only
+Student Campus 	Radio Button	Value is required
+Options are Penang Island, Batu Kawan and Johor Bahru.
+Intake Date	Combo Box	Value is required
+Options are January 2024, May 2024, September 2023
+Additional Info	Text Area	Value is optional
+Register	Submit	Validate all info when ‘submit’ is clicked*/
+
+
+<form id="form">
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="email">Student Email:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+        
+        <label>Contact Number:</label>
+        <input type="number" id="contact" name="contact">
+        
+        <label>Student Campus:</label>
+        <input type="radio" name="location" value="Penang Island"> Penang Island
+        <input type="radio" name="location" value="Batu Kawan"> Batu Kawan
+        <input type="radio" name="location" value="Johor Bahru"> Johor Bahru
+        
+        <label for="intakeDate">Intake Date:</label>
+        <select id="intakeDate" name="intakeDate">
+            <option value="">Select Date</option>
+            <option value="January 2024">January 2024</option>
+            <option value="May 2024">May 2024</option>
+            <option value="September 2023">September 2023</option>
+        </select>
+        
+        <label for="additionalInfo">Additional Info:</label><br>
+        <textarea id="additionalInfo" name="additionalInfo"></textarea>
+        
+        <input type="submit" value="Register">
+    </form>
+
+
+const form = document.getElementById("form");
+ form.addEventListener("submit", validateForm);
+
+        function validateForm(event) {
+            event.preventDefault(); // Prevent form submission for now
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            var contact = document.getElementById("contact").value;
+            var campus = document.querySelector('input[name="location"]:checked');
+            var intakeDate = document.getElementById("intakeDate").value;
+
+            // Validate Name
+            if (name.trim() === "") {
+                alert("Student Name is required.");
+                return;
+            }
+            // Validate Email
+            if (email.trim() === "") {
+                alert("Student Email is required.");
+                return;
+            }
+            // Validate Password
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters long.");
+                return;
+            }
+            // Validate Confirm Password
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return;
+            }
+            // Validate Contact Number
+            if (contact.length !== 10 || isNaN(contact)) {
+                alert("Contact number must be 10 digits only.");
+                return;
+            }
+            // Validate Student Campus
+            if (!campus) {
+                alert("Student Campus is required.");
+                return;
+            }
+            // Validate Intake Date
+            if (intakeDate === "") {
+                alert("Intake date is required.");
+                return;
+            }
+            // Validation successful, you can proceed with form submission or other actions
+            alert("Successful registration!");
+        }
+
