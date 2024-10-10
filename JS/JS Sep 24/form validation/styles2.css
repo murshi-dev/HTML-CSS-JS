@@ -1,0 +1,49 @@
+body {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container
+{
+    border:1px solid black;
+    padding:10px;border-radius: 5px;
+    width:500px;
+}
+.form-control
+{
+    margin-bottom:10px;
+    padding-bottom: 20px;
+    /* to make the error message visisble */
+    position:relative;
+}
+.form-control label
+{
+    display:block;
+}
+.form-control input,select,button{
+    display:block;
+    width:100%;
+}
+button
+{
+    display:block;
+    width:100%;
+    background-color: grey;
+    color:white;
+    border-radius: 5px;
+}
+#s1,#s2,#s3,#s4,#s5,#s6,#s7
+{
+    position:absolute;
+    visibility: hidden;
+    color:red;
+}
+
+.other-control
+{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 5px;
+}
