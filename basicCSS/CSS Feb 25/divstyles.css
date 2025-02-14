@@ -1,0 +1,34 @@
+.section1 {
+  background-color: gray;
+  color: white;
+  padding: 20px;
+  margin: 50px;
+  border: 10px solid black;
+}
+
+.section2 {
+  background-color: #2d2b84;
+  color: azure;
+  padding-top: 30px;
+  margin: 30px;
+  border: 20px solid brown;
+}
+
+/* format the menu */
+.flexdemo
+{
+    background-color: brown;
+    color:white;
+}
+
+/* target the list inside the flexdemo section */
+.flexdemo ul{
+    /* place the list items side by side */
+    display:flex; 
+    /* provide a space between the items */
+    justify-content: space-between;
+    /* remove the bullets */
+    list-style: none;
+    /* align the items */
+    align-items: center;
+}
