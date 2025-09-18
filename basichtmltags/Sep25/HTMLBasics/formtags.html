@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Basics</title>
+  </head>
+  <body>
+    <!-- form tags -->
+    <form>
+      <!-- username -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" />
+      <br /><!--break tag-->
+      <!--password-->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <br />
+      <!-- email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <br />
+      <!-- date -->
+      <label for="dob">DOB:</label>
+      <input type="date" id="dob" name="dob" />
+      <br />
+      <!-- checkbox --select more than ONE-->
+      <label for="hobbies">Hobbies:</label>
+      <input type="checkbox" name="hobbies" value="Reading" />Reading
+      <input type="checkbox" name="hobbies" value="Music" />Music
+      <br />
+      <!-- radio button -- select ONLY ONE -->
+      <label for="gender">Gender:</label>
+      <input type="radio" name="gender" value="male" />Male
+      <input type="radio" name="gender" value="female" />Female
+      <br>
+      <!-- combo box -->
+       <label for="state">State:</label>
+       <select name="state" id="state">
+        <option value="">Select an option</option>
+        <option value="penang">Penang</option>
+        <option value="kl">KL</option>
+        <option value="jb">JB</option>
+       </select>
+       <br>
+       <!-- textarea -->
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" rows="2" cols="20" 
+        placeholder="enter comments here">
+        </textarea>
+        <br>
+        <!-- button -->
+         <button type="submit">Submit</button>
+         <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>

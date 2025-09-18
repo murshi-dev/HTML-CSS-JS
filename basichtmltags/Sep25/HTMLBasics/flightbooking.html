@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flight Booking Form</title>
+</head>
+<body>
+  <form>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <caption><b>Flight Booking 2.0</b></caption>
+
+      <tr>
+        <td><label for="name">Full Name</label></td>
+        <td><input type="text" id="name" name="fullname" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="email">Email</label></td>
+        <td><input type="email" id="email" name="email"></td>
+      </tr>
+
+      <tr>
+        <td>Trip Type</td>
+        <td>
+          <input type="radio" id="oneway" name="trip" value="One Way">
+          <label for="oneway">One Way</label>
+          <input type="radio" id="return" name="trip" value="Return">
+          <label for="return">Return</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="from">From</label></td>
+        <td>
+          <select id="from" name="from">
+            <option>Penang</option>
+            <option>Kuala Lumpur</option>
+            <option>Johor</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="to">To</label></td>
+        <td>
+          <select id="to" name="to">
+            <option>Singapore</option>
+            <option>Bangkok</option>
+            <option>Jakarta</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="depart">Departure Date</label></td>
+        <td><input type="date" id="depart" name="depart"></td>
+      </tr>
+
+      <tr>
+        <td><label for="returnDate">Return Date</label></td>
+        <td><input type="date" id="returnDate" name="returnDate"></td>
+      </tr>
+
+      <tr>
+        <td>Extras</td>
+        <td>
+          <input type="checkbox" id="meal" name="extra" value="Meal">
+          <label for="meal">Meal</label>
+          <input type="checkbox" id="luggage" name="extra" value="Luggage">
+          <label for="luggage">Extra Luggage</label>
+          <input type="checkbox" id="insurance" name="extra" value="Insurance">
+          <label for="insurance">Travel Insurance</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="requests">Special Requests</label></td>
+        <td><textarea id="requests" name="requests" rows="4" cols="30"></textarea></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <input type="submit" value="Book Flight">
+          <input type="reset" value="Clear">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
