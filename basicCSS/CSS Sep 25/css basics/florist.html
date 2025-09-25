@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FloristShop</title>
+    <style>
+      /* general settings for the entire web page */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: #d5d2d2;
+      }
+      /* place the entire content inside a wrapper class */
+      /* easier to align the contents */
+      .wrapper {
+        max-width: 80%;
+        margin: auto;
+      }
+      /* navigation bar stays when others sections are scrolled down */
+      .navbar{
+        position: sticky;
+        top:0;
+      }
+      .navcontent {
+        display: flex;
+        justify-content: space-between;
+        background-color: #884f7a;
+        color: white;
+        padding: 10px 20px;
+      }
+      .logo {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .menu {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+      }
+      .menu li a {
+        text-decoration: none;
+        color: white;
+      }
+      .menu li a:hover {
+        color: yellowgreen;
+      }
+
+      section {
+        padding: 60px;
+        background-color: #e5d0d0;
+      }
+
+      .products {
+        display: grid;
+        /* disvide area to 3 equal sizes -- fr --fraction unit */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .product {
+        border: 2px solid rgb(121, 78, 85);
+        text-align: center;
+        border-radius: 10px;
+      }
+      .product img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      footer{
+        background-color: #884f7a;
+        color:white;
+        text-align: center;
+        padding:15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- navbar -->
+      <div class="navbar">
+        <div class="navcontent">
+          <!-- design the logo and ul list here -->
+          <div class="logo">Floral Boutique</div>
+          <ul class="menu">
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#flowers">Flowers</a></li>
+            <li><a href="#contactus">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- about us section -->
+      <section id="aboutus">
+        <h2>About Floral Boutique</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel neque
+          nesciunt quas dolorem delectus eligendi laboriosam odio magni laborum
+          molestiae, possimus, explicabo nobis ducimus? Deleniti fugiat optio
+          amet modi consectetur!
+        </p>
+      </section>
+
+      <!-- flowers section -->
+      <section id="flowers">
+        <h2>Our Flower Categories</h2>
+        <div class="products">
+          <!-- add product 1 -->
+          <div class="product">
+            <img src="roses.avif" alt="" />
+            <h3>Roses</h3>
+            <p>Roses for Wedding Celebrations</p>
+          </div>
+          <!-- add product 2 -->
+          <div class="product">
+            <img src="tulips.avif" alt="" />
+            <h3>Tulips</h3>
+            <p>Tulips for Spring Celebrations</p>
+          </div>
+          <!-- add product 3 -->
+          <div class="product">
+            <img src="orchids.avif" alt="" />
+            <h3>Orchids</h3>
+            <p>Orchids for Everlasting Gifts</p>
+          </div>
+        </div>
+      </section>
+      <!-- contact us section -->
+      <section id="contactus">
+        <h2>Contact Us</h2>
+        <p>Email: hello@floralboutique.com</p>
+        <p>Phone: +123-456-789</p>
+        <p>Visit us at: 123 Flower Street, Blossom City</p>
+      </section>
+      <!-- footer section -->
+      <footer>
+        <p>
+          © 2025 Floral Boutique. Fresh flowers, from our hearts to your home.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
