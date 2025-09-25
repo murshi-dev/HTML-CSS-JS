@@ -18,9 +18,9 @@
         margin: auto;
       }
       /* navigation bar stays when others sections are scrolled down */
-      .navbar{
+      .navbar {
         position: sticky;
-        top:0;
+        top: 0;
       }
       .navcontent {
         display: flex;
@@ -47,10 +47,13 @@
       }
 
       section {
-        padding: 60px;
-        background-color: #e5d0d0;
+        padding: 20px 25px; /*add 20px padding to top and bottom of the sections, left and right is 25px*/
       }
 
+      #aboutus,#contactus {
+        background-color: #d2b2d2;
+        text-align: justify;
+      }
       .products {
         display: grid;
         /* disvide area to 3 equal sizes -- fr --fraction unit */
@@ -58,22 +61,24 @@
         gap: 20px;
       }
       .product {
-        border: 2px solid rgb(121, 78, 85);
         text-align: center;
         border-radius: 10px;
+        padding: 15px;
+        /*  border: 2px solid rgb(150, 133, 136); */
+        box-shadow: 10px 10px 5px grey;
       }
       .product img {
         width: 100%;
-        height: 150px;
+        height: 300px;
         object-fit: cover;
         border-radius: 10px;
       }
 
-      footer{
+      footer {
         background-color: #884f7a;
-        color:white;
+        color: white;
         text-align: center;
-        padding:15px;
+        padding: 15px;
       }
     </style>
   </head>
@@ -95,6 +100,12 @@
       <section id="aboutus">
         <h2>About Floral Boutique</h2>
         <p>
+          Welcome to Floral Boutique, your local flower shop for every occasion.
+          From weddings to birthdays, we craft arrangements that bring joy and
+          elegance. Our flowers are handpicked daily to ensure freshness and
+          beauty
+        </p>
+        <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel neque
           nesciunt quas dolorem delectus eligendi laboriosam odio magni laborum
           molestiae, possimus, explicabo nobis ducimus? Deleniti fugiat optio
@@ -110,19 +121,19 @@
           <div class="product">
             <img src="roses.avif" alt="" />
             <h3>Roses</h3>
-            <p>Roses for Wedding Celebrations</p>
+            <p>Classic red, pink, and white roses for love and celebration.</p>
           </div>
           <!-- add product 2 -->
           <div class="product">
             <img src="tulips.avif" alt="" />
             <h3>Tulips</h3>
-            <p>Tulips for Spring Celebrations</p>
+            <p>Bright tulips that bring a touch of spring to any room.</p>
           </div>
           <!-- add product 3 -->
           <div class="product">
             <img src="orchids.avif" alt="" />
             <h3>Orchids</h3>
-            <p>Orchids for Everlasting Gifts</p>
+            <p>Elegant orchids for a sophisticated and lasting gift.</p>
           </div>
         </div>
       </section>
