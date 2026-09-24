@@ -1,0 +1,74 @@
+body{
+     font-family: Arial;
+}
+h1 {
+  color: blueviolet;
+}
+p {
+  color: blue;
+}
+.box
+{
+    /*add border around the content*/
+    border:5px solid black;
+    /*add space around the content*/
+    margin:10px;
+    /*add space between content and border*/
+    padding:10px;
+    background-color: #eba5a5;
+    width: 80px;
+}
+.flexbox
+{
+    /*arranges content horizontally*/
+    display:flex;
+    /*arranges the space between contents evenly*/
+    justify-content: space-evenly;
+}
+/* navigation bar styles */
+.navbar
+{
+    background-color: #dfb7b7;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+/* target the UL inside the navbar */
+.navbar ul{
+    display:flex;
+    list-style: none;/*remove bullets*/
+    justify-content: space-around;
+}
+/* target the anchor inside the list inside the navbar */
+.navbar li a{
+    text-decoration: none;/*removes line in hyperlink*/
+    color:brown;
+    font-weight: bold;
+}
+/*add hover effects to hyperlink*/
+.navbar li a:hover{
+    color:blueviolet;
+}
+/* grid layout styles */
+.gridContainer
+{
+    /*arrange contents in row column format*/
+    display:grid;
+    /* design 3 columns with 1 fraction space each */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* OR */
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    padding:30px;
+}
+.product
+{
+    text-align: center;
+    background-color: #cfc6c6;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: 0 5px grey;
+}
+
+
+
+
